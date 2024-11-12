@@ -1,0 +1,36 @@
+﻿<Window x:Class="KhabirovaJewerly.AutorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KhabirovaJewerly"
+        mc:Ignorable="d"
+        Title="KhabirovaJewerly" FontFamily=" Comic Sans MS" Icon="Resources\icon.ico" MinWidth="1000" MinHeight="500" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+            <Image Source="pictures\logo.png"  VerticalAlignment="Center" Height="100" Width="100"></Image>
+            <TextBlock Text="OOO Украшение" Grid.Column="0" FontSize="30" VerticalAlignment="Center"/>
+        </StackPanel>
+        
+        <TextBlock Text="Авторизация" Grid.Row="0" Grid.Column="1" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Text="Логин" Grid.Row="1" Grid.Column="1" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Text="Пароль" Grid.Row="2" Grid.Column="1" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Center"></TextBlock>
+        <TextBox Grid.Row="1" Grid.Column="1" Height="30" Width="300" VerticalContentAlignment="Center" HorizontalAlignment="Center"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Height="30" Width="300" VerticalContentAlignment="Center" HorizontalAlignment="Center"></TextBox>
+        <Button Grid.Column="1" Grid.Row="3" Content="Войти" Name="Login"></Button>
+        <Button Grid.Column="1" Grid.Row="4" Content="Войти как гость" Name="LoginGuest" Click="LoginGuest_Click"/>
+        
+    </Grid>
+</Window>
